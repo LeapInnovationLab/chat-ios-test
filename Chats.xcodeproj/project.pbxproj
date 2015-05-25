@@ -12,8 +12,6 @@
 		04AEE34E1B0E9D3700D41EBF /* ContactApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE34D1B0E9D3700D41EBF /* ContactApi.swift */; };
 		04AEE3501B0EB7D200D41EBF /* DataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE34F1B0EB7D200D41EBF /* DataContext.swift */; };
 		04AEE3521B0EB93F00D41EBF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE3511B0EB93F00D41EBF /* Contact.swift */; };
-		04B35A781B0C2C6600FCC45B /* bg_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B35A771B0C2C6600FCC45B /* bg_2.jpg */; };
-		04B35A7A1B0C2C6E00FCC45B /* bg_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B35A791B0C2C6E00FCC45B /* bg_1.jpg */; };
 		04DADFDA1B0C2748007A69D7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DADFD91B0C2748007A69D7 /* Onboarding.storyboard */; };
 		04DADFDE1B0C27B9007A69D7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DADFDD1B0C27B9007A69D7 /* LoginController.swift */; };
 		04DADFE01B0C2815007A69D7 /* ErrorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DADFDF1B0C2815007A69D7 /* ErrorApi.swift */; };
@@ -70,8 +68,6 @@
 		04AEE34D1B0E9D3700D41EBF /* ContactApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactApi.swift; sourceTree = "<group>"; };
 		04AEE34F1B0EB7D200D41EBF /* DataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContext.swift; sourceTree = "<group>"; };
 		04AEE3511B0EB93F00D41EBF /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		04B35A771B0C2C6600FCC45B /* bg_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_2.jpg; path = ../../../../Downloads/bg_2.jpg; sourceTree = "<group>"; };
-		04B35A791B0C2C6E00FCC45B /* bg_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_1.jpg; path = ../../../../Downloads/bg_1.jpg; sourceTree = "<group>"; };
 		04DADFD91B0C2748007A69D7 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		04DADFDD1B0C27B9007A69D7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		04DADFDF1B0C2815007A69D7 /* ErrorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorApi.swift; sourceTree = "<group>"; };
@@ -172,8 +168,6 @@
 		D2B11CE51AF43205004AE42B /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				04B35A771B0C2C6600FCC45B /* bg_2.jpg */,
-				04B35A791B0C2C6E00FCC45B /* bg_1.jpg */,
 				D2B11CE71AF43212004AE42B /* EnterPhoneTableViewController.swift */,
 				D2B11CE81AF43212004AE42B /* TextFieldTableViewCell.swift */,
 				04DADFD91B0C2748007A69D7 /* Onboarding.storyboard */,
@@ -431,11 +425,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D236741C1AF3C4D80073552A /* LaunchScreen.xib in Resources */,
-				04B35A781B0C2C6600FCC45B /* bg_2.jpg in Resources */,
 				04DADFDA1B0C2748007A69D7 /* Onboarding.storyboard in Resources */,
 				D2DEC3CE195B39290097CB9D /* MessageIncoming.aiff in Resources */,
 				D2DEC3CF195B39290097CB9D /* MessageOutgoing.aiff in Resources */,
-				04B35A7A1B0C2C6E00FCC45B /* bg_1.jpg in Resources */,
 				D2DEC3A2195B33C20097CB9D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

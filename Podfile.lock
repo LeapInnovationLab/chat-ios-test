@@ -1,0 +1,19 @@
+PODS:
+  - Alamofire (1.2.2)
+  - AlecrimCoreData (3.0)
+  - JSONJoy-Swift (0.9.2)
+  - SwiftHTTP (0.9.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2)
+  - AlecrimCoreData (~> 3.0)
+  - JSONJoy-Swift (~> 0.9.2)
+  - SwiftHTTP (~> 0.9.4)
+
+SPEC CHECKSUMS:
+  Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
+  AlecrimCoreData: f2c351326cd7a6e2423cf06fade7436c0a652177
+  JSONJoy-Swift: d51bde1053047c623db602e778f068414dd788e4
+  SwiftHTTP: c2f880b1723e6e97c31517dab29a1b5c0bc1f49d
+
+COCOAPODS: 0.37.1
