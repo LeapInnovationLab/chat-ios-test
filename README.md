@@ -1,8 +1,9 @@
-# Quesee Chats
+# Quesee iOS
 
 
-## Install
+## Installation
 
-* Install https://cocoapods.org/, then run:
+Some dependencies are added using https://cocoapods.org/.
 
-    pod install
+* pod install
+* open Chats.xcworkspace
