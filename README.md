@@ -6,7 +6,7 @@
 Some dependencies are added using https://cocoapods.org/.
 
 * pod install
-* open Chats.xcworkspace
+* open Quesee.xcworkspace
 
 Install submodules
 
