@@ -1,6 +1,6 @@
 //
 //  UserApi.swift
-//  Chats
+//  Quesee
 //
 //  Created by Adbeel on 5/19/15.
 //  Copyright (c) 2015 Quesee Inc. All rights reserved.

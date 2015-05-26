@@ -1,6 +1,6 @@
 import XCTest
 
-class ChatsTests: XCTestCase {
+class QueseeTests: XCTestCase {
     func testExample() {
 //        let users = [
 //            (User(ID: "1", username: "mattdipasquale", firstName: "Matt", lastName: "Di Pasquale"), "MD"),

@@ -1,6 +1,6 @@
 //
 //  ContactListApi.swift
-//  Chats
+//  Quesee
 //
 //  Created by Adbeel on 5/21/15.
 //  Copyright (c) 2015 Quesee Inc. All rights reserved.

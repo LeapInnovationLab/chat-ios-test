@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0485D9E01B100701002A56F9 /* Chats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0485D9DE1B100701002A56F9 /* Chats.xcdatamodeld */; };
+		0485D9E01B100701002A56F9 /* Quesee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0485D9DE1B100701002A56F9 /* Quesee.xcdatamodeld */; };
 		04AEE34C1B0E9CBE00D41EBF /* ContactListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE34B1B0E9CBE00D41EBF /* ContactListApi.swift */; };
 		04AEE34E1B0E9D3700D41EBF /* ContactApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE34D1B0E9D3700D41EBF /* ContactApi.swift */; };
 		04AEE3501B0EB7D200D41EBF /* DataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE34F1B0EB7D200D41EBF /* DataContext.swift */; };
@@ -38,7 +38,7 @@
 		D2C2F3F71A1BA72100A52FE8 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C2F3F61A1BA72100A52FE8 /* ComposeViewController.swift */; };
 		D2DEC3A0195B33C20097CB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC39F195B33C20097CB9D /* AppDelegate.swift */; };
 		D2DEC3A2195B33C20097CB9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DEC3A1195B33C20097CB9D /* Images.xcassets */; };
-		D2DEC3AE195B33C20097CB9D /* ChatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC3AD195B33C20097CB9D /* ChatsTests.swift */; };
+		D2DEC3AE195B33C20097CB9D /* QueseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC3AD195B33C20097CB9D /* QueseeTests.swift */; };
 		D2DEC3B9195B34700097CB9D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC3B8195B34700097CB9D /* Account.swift */; };
 		D2DEC3BB195B34A20097CB9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC3BA195B34A20097CB9D /* User.swift */; };
 		D2DEC3BD195B34AA0097CB9D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEC3BC195B34AA0097CB9D /* Chat.swift */; };
@@ -63,7 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0485D9DF1B100701002A56F9 /* Chats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chats.xcdatamodel; sourceTree = "<group>"; };
+		0485D9DF1B100701002A56F9 /* Quesee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quesee.xcdatamodel; sourceTree = "<group>"; };
 		04AEE34B1B0E9CBE00D41EBF /* ContactListApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListApi.swift; sourceTree = "<group>"; };
 		04AEE34D1B0E9D3700D41EBF /* ContactApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactApi.swift; sourceTree = "<group>"; };
 		04AEE34F1B0EB7D200D41EBF /* DataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContext.swift; sourceTree = "<group>"; };
@@ -96,13 +96,13 @@
 		D2C2F3F21A1BA64100A52FE8 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		D2C2F3F41A1BA67E00A52FE8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		D2C2F3F61A1BA72100A52FE8 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
-		D2DEC39A195B33C20097CB9D /* Chats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DEC39A195B33C20097CB9D /* Quesee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quesee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DEC39E195B33C20097CB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DEC39F195B33C20097CB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2DEC3A1195B33C20097CB9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D2DEC3A7195B33C20097CB9D /* ChatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DEC3A7195B33C20097CB9D /* QueseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DEC3AC195B33C20097CB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2DEC3AD195B33C20097CB9D /* ChatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTests.swift; sourceTree = "<group>"; };
+		D2DEC3AD195B33C20097CB9D /* QueseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueseeTests.swift; sourceTree = "<group>"; };
 		D2DEC3B8195B34700097CB9D /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		D2DEC3BA195B34A20097CB9D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2DEC3BC195B34AA0097CB9D /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 		D2DEC391195B33C20097CB9D = {
 			isa = PBXGroup;
 			children = (
-				D2DEC39C195B33C20097CB9D /* Chats */,
-				D2DEC3AA195B33C20097CB9D /* ChatsTests */,
+				D2DEC39C195B33C20097CB9D /* Quesee */,
+				D2DEC3AA195B33C20097CB9D /* QueseeTests */,
 				D2DEC39B195B33C20097CB9D /* Products */,
 				D29AEE8F1960C79700925449 /* README.md */,
 				D2B11CEC1AF43281004AE42B /* Libraries */,
@@ -249,16 +249,16 @@
 		D2DEC39B195B33C20097CB9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2DEC39A195B33C20097CB9D /* Chats.app */,
-				D2DEC3A7195B33C20097CB9D /* ChatsTests.xctest */,
+				D2DEC39A195B33C20097CB9D /* Quesee.app */,
+				D2DEC3A7195B33C20097CB9D /* QueseeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2DEC39C195B33C20097CB9D /* Chats */ = {
+		D2DEC39C195B33C20097CB9D /* Quesee */ = {
 			isa = PBXGroup;
 			children = (
-				0485D9DE1B100701002A56F9 /* Chats.xcdatamodeld */,
+				0485D9DE1B100701002A56F9 /* Quesee.xcdatamodeld */,
 				D2DEC39F195B33C20097CB9D /* AppDelegate.swift */,
 				04DADFD81B0C17F9007A69D7 /* Api */,
 				D2B11CE51AF43205004AE42B /* Welcome */,
@@ -272,7 +272,7 @@
 				D2DEC3CB195B39290097CB9D /* Resources */,
 				D2DEC39D195B33C20097CB9D /* Supporting Files */,
 			);
-			path = Chats;
+			path = Quesee;
 			sourceTree = "<group>";
 		};
 		D2DEC39D195B33C20097CB9D /* Supporting Files */ = {
@@ -284,13 +284,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D2DEC3AA195B33C20097CB9D /* ChatsTests */ = {
+		D2DEC3AA195B33C20097CB9D /* QueseeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D2DEC3AD195B33C20097CB9D /* ChatsTests.swift */,
+				D2DEC3AD195B33C20097CB9D /* QueseeTests.swift */,
 				D2DEC3AB195B33C20097CB9D /* Supporting Files */,
 			);
-			path = ChatsTests;
+			path = QueseeTests;
 			sourceTree = "<group>";
 		};
 		D2DEC3AB195B33C20097CB9D /* Supporting Files */ = {
@@ -345,9 +345,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2DEC399195B33C20097CB9D /* Chats */ = {
+		D2DEC399195B33C20097CB9D /* Quesee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2DEC3B1195B33C20097CB9D /* Build configuration list for PBXNativeTarget "Chats" */;
+			buildConfigurationList = D2DEC3B1195B33C20097CB9D /* Build configuration list for PBXNativeTarget "Quesee" */;
 			buildPhases = (
 				6CB031064E4A7D52AF947D96 /* Check Pods Manifest.lock */,
 				D2DEC396195B33C20097CB9D /* Sources */,
@@ -360,14 +360,14 @@
 			);
 			dependencies = (
 			);
-			name = Chats;
+			name = Quesee;
 			productName = Chats;
-			productReference = D2DEC39A195B33C20097CB9D /* Chats.app */;
+			productReference = D2DEC39A195B33C20097CB9D /* Quesee.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D2DEC3A6195B33C20097CB9D /* ChatsTests */ = {
+		D2DEC3A6195B33C20097CB9D /* QueseeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2DEC3B4195B33C20097CB9D /* Build configuration list for PBXNativeTarget "ChatsTests" */;
+			buildConfigurationList = D2DEC3B4195B33C20097CB9D /* Build configuration list for PBXNativeTarget "QueseeTests" */;
 			buildPhases = (
 				D2DEC3A3195B33C20097CB9D /* Sources */,
 				D2DEC3A4195B33C20097CB9D /* Frameworks */,
@@ -378,9 +378,9 @@
 			dependencies = (
 				D2DEC3A9195B33C20097CB9D /* PBXTargetDependency */,
 			);
-			name = ChatsTests;
+			name = QueseeTests;
 			productName = ChatsTests;
-			productReference = D2DEC3A7195B33C20097CB9D /* ChatsTests.xctest */;
+			productReference = D2DEC3A7195B33C20097CB9D /* QueseeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -401,7 +401,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2DEC395195B33C20097CB9D /* Build configuration list for PBXProject "Chats" */;
+			buildConfigurationList = D2DEC395195B33C20097CB9D /* Build configuration list for PBXProject "Quesee" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -413,8 +413,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2DEC399195B33C20097CB9D /* Chats */,
-				D2DEC3A6195B33C20097CB9D /* ChatsTests */,
+				D2DEC399195B33C20097CB9D /* Quesee */,
+				D2DEC3A6195B33C20097CB9D /* QueseeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -505,7 +505,7 @@
 				04ECC8041B0D513E008ED898 /* HomeController.swift in Sources */,
 				D2DEC3B9195B34700097CB9D /* Account.swift in Sources */,
 				D2C2F3F71A1BA72100A52FE8 /* ComposeViewController.swift in Sources */,
-				0485D9E01B100701002A56F9 /* Chats.xcdatamodeld in Sources */,
+				0485D9E01B100701002A56F9 /* Quesee.xcdatamodeld in Sources */,
 				D23EFE56197F053100C575C5 /* MessageSentDateTableViewCell.swift in Sources */,
 				D2B11CF11AF432B9004AE42B /* UIButtonBackgroundColor.swift in Sources */,
 				D2DEC3C6195B35440097CB9D /* ChatTableViewCell.swift in Sources */,
@@ -537,7 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C0D26F19A519CE00F4B4DD /* User.swift in Sources */,
-				D2DEC3AE195B33C20097CB9D /* ChatsTests.swift in Sources */,
+				D2DEC3AE195B33C20097CB9D /* QueseeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 /* Begin PBXTargetDependency section */
 		D2DEC3A9195B33C20097CB9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2DEC399195B33C20097CB9D /* Chats */;
+			target = D2DEC399195B33C20097CB9D /* Quesee */;
 			targetProxy = D2DEC3A8195B33C20097CB9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -635,9 +635,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Chats/Info.plist;
+				INFOPLIST_FILE = Quesee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quesee;
 			};
 			name = Debug;
 		};
@@ -647,16 +647,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Chats/Info.plist;
+				INFOPLIST_FILE = Quesee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quesee;
 			};
 			name = Release;
 		};
 		D2DEC3B5195B33C20097CB9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chats.app/Chats";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quesee.app/Quesee";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -665,10 +665,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ChatsTests/Info.plist;
+				INFOPLIST_FILE = QueseeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QueseeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -676,15 +676,15 @@
 		D2DEC3B6195B33C20097CB9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chats.app/Chats";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quesee.app/Quesee";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ChatsTests/Info.plist;
+				INFOPLIST_FILE = QueseeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QueseeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -692,7 +692,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2DEC395195B33C20097CB9D /* Build configuration list for PBXProject "Chats" */ = {
+		D2DEC395195B33C20097CB9D /* Build configuration list for PBXProject "Quesee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2DEC3AF195B33C20097CB9D /* Debug */,
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2DEC3B1195B33C20097CB9D /* Build configuration list for PBXNativeTarget "Chats" */ = {
+		D2DEC3B1195B33C20097CB9D /* Build configuration list for PBXNativeTarget "Quesee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2DEC3B2195B33C20097CB9D /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2DEC3B4195B33C20097CB9D /* Build configuration list for PBXNativeTarget "ChatsTests" */ = {
+		D2DEC3B4195B33C20097CB9D /* Build configuration list for PBXNativeTarget "QueseeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2DEC3B5195B33C20097CB9D /* Debug */,
@@ -722,13 +722,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0485D9DE1B100701002A56F9 /* Chats.xcdatamodeld */ = {
+		0485D9DE1B100701002A56F9 /* Quesee.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0485D9DF1B100701002A56F9 /* Chats.xcdatamodel */,
+				0485D9DF1B100701002A56F9 /* Quesee.xcdatamodel */,
 			);
-			currentVersion = 0485D9DF1B100701002A56F9 /* Chats.xcdatamodel */;
-			path = Chats.xcdatamodeld;
+			currentVersion = 0485D9DF1B100701002A56F9 /* Quesee.xcdatamodel */;
+			path = Quesee.xcdatamodeld;
 			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};

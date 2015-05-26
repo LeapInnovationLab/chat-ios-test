@@ -10,11 +10,11 @@ pod 'JSONJoy-Swift', '~> 0.9.2'
 pod 'Alamofire', '~> 1.2'
 pod 'AlecrimCoreData', '~> 3.0'
 
-target 'Chats' do
+target 'Quesee' do
 
 end
 
-target 'ChatsTests' do
+target 'QueseeTests' do
 
 end
 
