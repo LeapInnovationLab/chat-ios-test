@@ -1,4 +1,4 @@
-# Quesee iOS
+# Chat iOS test app
 
 
 ## Installation
