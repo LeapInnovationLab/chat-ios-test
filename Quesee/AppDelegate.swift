@@ -7,9 +7,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        account.addObserver(self, forKeyPath: "accessToken", options: NSKeyValueObservingOptions(0), context: nil) // always
+        account.addObserver(self, forKeyPath: "accessToken", options: NSKeyValueObservingOptions(rawValue: 0), context: nil) // always
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        let loginView = storyboard.instantiateViewControllerWithIdentifier("onboarding") as! UIViewController
+        let loginView = storyboard.instantiateViewControllerWithIdentifier("onboarding") 
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window!.backgroundColor = UIColor.whiteColor()
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: NSKeyValueObserving
 
-    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if account.accessToken != nil {
             let headers =  ["X-QUESEE-AUTHTOKEN": account.accessToken]
             Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders = headers
@@ -35,15 +35,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 })
             })
         } else {
-            println(self.window!.rootViewController)
+            print(self.window!.rootViewController)
             if self.window!.rootViewController is LoginController {
-                var alert = UIAlertController(title: "Quesee", message: "Invalid email or password, please try again", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Quesee", message: "Invalid email or password, please try again", preferredStyle: UIAlertControllerStyle.Alert)
                 let axtion = UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(axtion)
                 window!.rootViewController!.presentViewController(alert, animated: true, completion: nil)
             } else {
                 let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-                let loginView = storyboard.instantiateViewControllerWithIdentifier("onboarding") as! UIViewController
+                let loginView = storyboard.instantiateViewControllerWithIdentifier("onboarding") 
                 window!.rootViewController = loginView //UINavigationController(rootViewController: loginView)
             }
         }

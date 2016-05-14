@@ -12,7 +12,7 @@ class TextFieldTableViewCell: UITableViewCell {
         contentView.addSubview(textField)
 
         // Add `textField` constraints
-        textField.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textFieldLeftLayoutConstraint = NSLayoutConstraint(item: textField, attribute: .Left, relatedBy: .Equal, toItem: contentView, attribute: .Left, multiplier: 1, constant: separatorInset.left+1)
         contentView.addConstraint(textFieldLeftLayoutConstraint)
         contentView.addConstraint(NSLayoutConstraint(item: textField, attribute: .Right, relatedBy: .Equal, toItem: contentView, attribute: .Right, multiplier: 1, constant: -10))

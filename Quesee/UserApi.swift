@@ -35,19 +35,28 @@ struct UserApi : JSONJoy {
     
     func toUser() -> User {
         // Save or update loggedin user locally
-        let user = dataContext.users.firstOrCreated(whereAttribute: "userId", isEqualTo: self.userId)
-        user.firstName = firstName
-        user.lastName = lastName
-        user.avatar = avatar
-        dataContext.save()
-        return user
+//        let user = dataContext.users.firstOrCreated({ $0.identifier == 9 }) //(whereAttribute: "userId", isEqualTo: self.userId)
+//        user.firstName = firstName
+//        user.lastName = lastName
+//        user.avatar = avatar
+//        
+//        do {
+//            try dataContext.save()
+//        }
+//        catch let error {
+//            // do a nice error handling here
+//        }
+//        
+//        return user
+        
+        return User()
     }
     
     static func get(userId: String, completionBlock: (User?) -> ()) {
         Alamofire.request(.GET, "https://dev.quesee.co/v1/users/\(userId)")
             .response { (request, response, data, error) in
                 if response?.statusCode == 200 {
-                    let datax = data as! NSData
+                    let datax = data as NSData!
                     let user = UserApi(JSONDecoder(datax)).toUser()
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         completionBlock(user)

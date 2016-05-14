@@ -9,9 +9,9 @@
 import Foundation
 import AlecrimCoreData
 
-let dataContext = DataContext()!
+let dataContext = DataContext()
 
-final class DataContext: AlecrimCoreData.Context {
-    var users:    AlecrimCoreData.Table<User>    { return AlecrimCoreData.Table<User>(context: self) }
-    var contacts: AlecrimCoreData.Table<Contact> { return AlecrimCoreData.Table<Contact>(context: self) }
+extension DataContext {
+    var users:      Table<User>     { return Table<User>(dataContext: self) }
+    var contacts: Table<Contact> { return Table<Contact>(dataContext: self) }
 }

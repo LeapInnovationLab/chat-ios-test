@@ -27,7 +27,7 @@ class Account: NSObject {
         Alamofire.request(.GET, "https://dev.quesee.co:443/v1/users")
             .response { (request, response, data, error) in
                 if response?.statusCode == 200 {
-                    let datax = data as! NSData
+                    let datax = data as NSData!
                     self.user = UserApi(JSONDecoder(datax)).toUser()
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         completionBlock(self.user)
@@ -49,7 +49,7 @@ class Account: NSObject {
         Alamofire.request(.GET, "https://dev.quesee.co/v1/conversations", parameters: params)
             .response { (request, response, data, error) in
                 if response?.statusCode == 200 {
-                    let datax = data as! NSData
+                    let datax = data as NSData!
                     self.chats = ConversationListApi(JSONDecoder(datax)).toChats()
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         completionBlock(error)
@@ -70,7 +70,7 @@ class Account: NSObject {
         Alamofire.request(.GET, "https://dev.quesee.co/v1/contacts", parameters: params)
             .response { (request, response, data, error) in
                 if response?.statusCode == 200 {
-                    let datax = data as! NSData                    
+                    let datax = data as NSData!
                     //Synch contacts list
                     let contactList = ContactListApi(JSONDecoder(datax))
                     contactList.synchLocal()
@@ -87,20 +87,21 @@ class Account: NSObject {
     
     func login(email: String, password: String) {
         let params: Dictionary<String,AnyObject> = [
-            "userAgent": "param1",
+            "userAgent": "iOS/Chats",
             "platform": "2",
-            "cloudId": UIDevice.currentDevice().identifierForVendor,
+            "cloudId": UIDevice.currentDevice().identifierForVendor!,
             "email": email,
             "password" : password
         ]
         Alamofire.request(.POST, "https://dev.quesee.co/v1/sessions", parameters: params)
             .response { (request, response, data, error) in
+                
                 if response?.statusCode == 200 {
                     self.error = nil
                     self.userId = response?.allHeaderFields["X-QUESEE-AUTHTOKEN"] as! String
                     self.accessToken = response?.allHeaderFields["X-QUESEE-AUTHTOKEN"] as! String
                 } else {
-                    let datax = data as! NSData
+                    let datax = data as NSData!
                     self.error = ErrorApi(JSONDecoder(datax))
                     self.accessToken = nil
                 }

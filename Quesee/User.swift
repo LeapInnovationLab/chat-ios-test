@@ -14,7 +14,7 @@ class User: NSManagedObject {
     var initials: String? {
         var initials: String?
         for name in [firstName, lastName] {
-            var initial = name.substringToIndex(advance(name.startIndex, 1))
+            let initial = name.substringToIndex(name.startIndex.advancedBy(1))
             if initial.lengthOfBytesUsingEncoding(NSNEXTSTEPStringEncoding) > 0 {
                 initials = (initials == nil ? initial : initials! + initial)
             }

@@ -16,7 +16,7 @@ class UserPictureImageView: UIImageView {
         userNameInitialsLabel.textColor = UIColor.whiteColor()
         addSubview(userNameInitialsLabel)
 
-        userNameInitialsLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        userNameInitialsLabel.translatesAutoresizingMaskIntoConstraints = false
         addConstraint(NSLayoutConstraint(item: userNameInitialsLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: userNameInitialsLabel, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: -1))
     }

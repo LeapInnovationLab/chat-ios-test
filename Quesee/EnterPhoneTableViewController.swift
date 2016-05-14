@@ -19,9 +19,9 @@ class EnterPhoneTableViewController: UITableViewController {
         tableFooterView.autoresizingMask = .FlexibleWidth
         tableView.tableFooterView = tableFooterView
 
-        let continueAsGuestButton = UIButton.buttonWithType(.System) as! UIButton
+        let continueAsGuestButton = UIButton(type: .System)
         continueAsGuestButton.addTarget(self, action: "continueAsGuestAction", forControlEvents: .TouchUpInside)
-        continueAsGuestButton.autoresizingMask = .FlexibleLeftMargin | .FlexibleRightMargin | .FlexibleTopMargin
+        continueAsGuestButton.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin ]
         continueAsGuestButton.frame = CGRect(x: (view.frame.width-184)/2, y: 32, width: 184, height: 44)
         continueAsGuestButton.setTitle("Continue as Guest", forState: .Normal)
         continueAsGuestButton.titleLabel?.font = UIFont.systemFontOfSize(17)
@@ -52,12 +52,12 @@ class EnterPhoneTableViewController: UITableViewController {
     }
 
     func textFieldDidChange(textField: UITextField) {
-        let textLength = count(textField.text)
+        let textLength = textField.text?.characters.count
         navigationItem.rightBarButtonItem?.enabled = (textLength == 10)
     }
 
     func verifyAction() {
-        println("Verify")
+        print("Verify")
 //        myAccount.createCodeWithPhone(textField.text)
     }
 }

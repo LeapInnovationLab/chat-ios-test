@@ -75,7 +75,7 @@ class SettingsTableViewController: UITableViewController, UIActionSheetDelegate 
             account.logOut()
         default:
             let actionSheet = UIActionSheet(title: "Deleting your account will permanently delete your phone number, picture, and first & last name.\n\nAre you sure you want to delete your account?", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Delete Accout")
-            actionSheet.showInView(tableView.window)
+            actionSheet.showInView(tableView.window!)
         }
     }
 

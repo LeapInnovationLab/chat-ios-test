@@ -13,7 +13,7 @@ class UserCollectionViewCell: UICollectionViewCell {
 
         backgroundView = UIImageView(frame: frame)
         selectedBackgroundView = UIView(frame: frame)
-        selectedBackgroundView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        selectedBackgroundView!.backgroundColor = UIColor(white: 0, alpha: 0.5)
 
         nameLabel.adjustsFontSizeToFitWidth = true
         nameLabel.minimumScaleFactor = 0.7

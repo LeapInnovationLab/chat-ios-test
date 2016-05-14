@@ -17,6 +17,7 @@ class Contact: NSManagedObject {
     @NSManaged var enabled: Int16
     
     func getUser() -> User! {
-        return dataContext.users.filterBy(attribute: "userId", value: self.userId).first()
+        let predicate =  NSPredicate(format: "userId == %@", self.userId)
+        return dataContext.users.filterUsingPredicate(predicate).first()
     }
 }
