@@ -26,7 +26,7 @@ class LoginController: UIViewController {
             alert.addAction(axtion)
             self.presentViewController(alert, animated: true, completion: nil)
         } else {
-            account.login(emailInput.text, password: passwordInput.text)
+            account.login(emailInput.text!, password: passwordInput.text!)
         }
     }
     
