@@ -44,7 +44,7 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
             tableView.tableHeaderView = nil
             tableView.viewWithTag(3)!.removeFromSuperview()
 
-            let pictureButton = UIButton.buttonWithType(.System) as! UIButton
+            let pictureButton = UIButton(type: .System)
             pictureButton.addTarget(self, action: "editPictureAction", forControlEvents: .TouchUpInside)
             pictureButton.adjustsImageWhenHighlighted = false
             pictureButton.clipsToBounds = true
@@ -77,7 +77,7 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
             if saveChanges {
                 let firstNameTextField = tableView.textFieldForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0))!
                 if firstNameTextField.hasText() {
-                    user.firstName = firstNameTextField.text
+                    user.firstName = firstNameTextField.text!
                 } else {
                     let alertView = UIAlertView(title: "First Name Required", message: nil, delegate: nil, cancelButtonTitle: "OK")
                     alertView.show()
@@ -87,7 +87,7 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
 
                 let lastNameTextField = tableView.textFieldForRowAtIndexPath(NSIndexPath(forRow: 1, inSection: 0))!
                 if lastNameTextField.hasText() {
-                    user.lastName = lastNameTextField.text
+                    user.lastName = lastNameTextField.text!
                 } else {
                     let alertView = UIAlertView(title: "Last Name Required", message: nil, delegate: nil, cancelButtonTitle: "OK")
                     alertView.show()
@@ -100,7 +100,7 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
     }
 
     func addEditPictureButton() {
-        let editPictureButton = UIButton.buttonWithType(.System) as! UIButton
+        let editPictureButton = UIButton(type: .System)
         editPictureButton.frame = CGRect(x: 28, y: 12+60-0.5, width: 34, height: 21)
         editPictureButton.setTitle("edit", forState: .Normal)
         editPictureButton.tag = 5
@@ -141,7 +141,7 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
             actionSheet.addButtonWithTitle("Delete Photo")
             actionSheet.destructiveButtonIndex = 3
         }
-        actionSheet.showInView(tableView.window)
+        actionSheet.showInView(tableView.window!)
     }
 
     func cancelEditingAction() {
@@ -202,40 +202,41 @@ class ProfileTableViewController: UITableViewController, UIActionSheetDelegate, 
 
     // MARK: UIImagePickerControllerDelegate
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        let mediaType = info[UIImagePickerControllerMediaType] as! CFString!
-        if UTTypeConformsTo(mediaType, kUTTypeImage) != 0 {
-            var image = info[UIImagePickerControllerEditedImage] as! UIImage!
-            if image == nil {
-                image = info[UIImagePickerControllerOriginalImage] as! UIImage!
-            }
-
-            // Resize image to 2048px max width
-            image = image.resizedImage(2048)
-            println(image.size)
-
-            // TEST: Save image to documents directory.
-            let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-            var uuid = NSUUID().UUIDString // E621E1F8-C36C-495A-93FC-0C247A3E6E5F
-            let range = Range<String.Index>(start: uuid.startIndex, end: advance(uuid.endIndex, -12))
-            uuid = uuid.stringByReplacingOccurrencesOfString("-", withString: "", options: .LiteralSearch, range: range).lowercaseString
-            let filePath = paths[0].stringByAppendingPathComponent("\(uuid).jpg")
-            let imageData = UIImageJPEGRepresentation(image, 0.9)
-//            imageData.writeToFile(filePath, atomically: true)
-            println(filePath)
-
-            // Upload image to server
-
-            let pictureButton = tableView.viewWithTag(4) as! UIButton
-            pictureButton.setBackgroundImage(image, forState: .Normal)
-            if pictureButton.titleForState(.Normal) != nil {
-                pictureButton.setTitle(nil, forState: .Normal)
-                addEditPictureButton()
-            }
-
-            picker.dismissViewControllerAnimated(true, completion: nil)
-        }
-    }
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+//        let mediaType = info[UIImagePickerControllerMediaType] as! CFString!
+//        
+//        if UTTypeConformsTo(mediaType, kUTTypeImage) != 0 {
+//            var image = info[UIImagePickerControllerEditedImage] as! UIImage!
+//            if image == nil {
+//                image = info[UIImagePickerControllerOriginalImage] as! UIImage!
+//            }
+//
+//            // Resize image to 2048px max width
+//            image = image.resizedImage(2048)
+//            print(image.size)
+//
+//            // TEST: Save image to documents directory.
+//            let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+//            var uuid = NSUUID().UUIDString // E621E1F8-C36C-495A-93FC-0C247A3E6E5F
+//            let range = Range<String.Index>(start: uuid.startIndex, end: advance(uuid.endIndex, -12))
+//            uuid = uuid.stringByReplacingOccurrencesOfString("-", withString: "", options: .LiteralSearch, range: range).lowercaseString
+//            let filePath = paths[0].stringByAppendingPathComponent("\(uuid).jpg")
+//            let imageData = UIImageJPEGRepresentation(image, 0.9)
+////            imageData.writeToFile(filePath, atomically: true)
+//            print(filePath)
+//
+//            // Upload image to server
+//
+//            let pictureButton = tableView.viewWithTag(4) as! UIButton
+//            pictureButton.setBackgroundImage(image, forState: .Normal)
+//            if pictureButton.titleForState(.Normal) != nil {
+//                pictureButton.setTitle(nil, forState: .Normal)
+//                addEditPictureButton()
+//            }
+//
+//            picker.dismissViewControllerAnimated(true, completion: nil)
+//        }
+//    }
 }
 
 extension UIImage {
